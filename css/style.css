@@ -1,4 +1,9 @@
 /* GLOBAL STYLES */
+:root {
+  --accent-color: ;
+  --font-text: "Roboto", "Arial", sans-serif;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -15,7 +20,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "Arial";
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 1.5;
   color: #222;
@@ -44,22 +49,123 @@ img {
   flex-grow: 1;
 }
 
-.content{
-  flex-grow: 1;
+.site-header {
+  padding-top: 30px;
+  padding-bottom: 78px;
+  background-color: #fff;
 }
 
-.box-1 {
-  color: blue;
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.box-2 {
-  color: blue;
+
+.logo-link {
+  transition: opacity 0.4s ease;
 }
-.box-3 {
-  color: blue;
+.logo-link:hover{
+  opacity: 0.8;
 }
-.box-4 {
-  color: blue;
+.logo-link:active {
+  opacity: 0.6;
 }
-.box-5 {
-  color: blue;
+.logo-link img{
+  display: block;  
+}
+
+.site-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sitenav-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.sitenav-item {
+  margin-right: 30px;
+}
+.sitenav-item:last-child{
+  margin-right: 0;
+}
+.sitenav-item:hover {
+  border-bottom: 1px solid #222;
+}
+.sitenav-item:active{
+  opacity: 0.6;
+}
+
+.sitenav-link {
+  color: #333;
+  font-family: var(--font-text);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  text-decoration: none;
+  transition: color 0.4s ease,
+  opacity 0.4s ease;
+}
+
+.faq-link {
+  padding-bottom: 6px;
+  text-decoration: none;
+  color: #666;
+  text-align: center;
+  font-family: var(--font-text);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+}
+.faq-link:hover{
+  border-bottom: 1px solid #222;
+}
+.faq-link:active{
+  opacity: 0.6;
+}
+
+
+/* HERO */
+.hero-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 490px;
+  height: 291px;
+  background-color: #fff;
+}
+.hero-header {
+  color: #000;
+  text-align: center;
+  font-family: var(--font-text);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 60px */
+  margin: 0;
+  margin-bottom: 30px;
+}
+.hero-text {
+  color: #777;
+  font-family: var(--font-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  padding-left: 40px;
+  border-left:3px solid #888;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.hero-link {
+}
+.hero-img {
 }
