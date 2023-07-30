@@ -1,6 +1,6 @@
 /* GLOBAL STYLES */
 :root {
-  --accent-color: ;
+  --accent-color: #ea625c;
   --font-text: "Roboto", "Arial", sans-serif;
 }
 
@@ -178,7 +178,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 12px;
-  background: #EA625C;
+  background: var(--accent-color);
 }
 .hero-link:hover{
   opacity: 0.8;
@@ -289,7 +289,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 12px;
-  background: #EA625C;
+  background: var(--accent-color);
 }
 .promo-box-link:hover{
   opacity: 0.8;
@@ -360,7 +360,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 12px;
-  background: #EA625C;
+  background: var(--accent-color);
 }
 .health-link:hover{
   opacity: 0.8;
